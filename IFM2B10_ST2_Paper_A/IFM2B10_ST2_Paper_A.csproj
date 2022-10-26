@@ -1,0 +1,407 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D63C4BAB-DEE2-424F-9E48-9C80BE390EFE}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IFM2B10_ST2_Paper_A</RootNamespace>
+    <AssemblyName>IFM2B10_ST2_Paper_A</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="AboutMeal.aspx" />
+    <Content Include="Chefs.aspx" />
+    <Content Include="Connected Services\ServiceReference1\IFM2B10_ST2_Paper_A.ServiceReference1.Item.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceReference1\IFM2B10_ST2_Paper_A.ServiceReference1.itemMenu.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceReference1\IFM2B10_ST2_Paper_A.ServiceReference1.Reservation.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\ServiceReference1\PaperAService.disco" />
+    <None Include="Connected Services\ServiceReference1\configuration91.svcinfo" />
+    <None Include="Connected Services\ServiceReference1\configuration.svcinfo" />
+    <None Include="Connected Services\ServiceReference1\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="css\all.css" />
+    <Content Include="css\animate.css" />
+    <Content Include="css\aos.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\flaticon.css" />
+    <Content Include="css\font-awesome.min.css" />
+    <Content Include="css\gijgo.min.css" />
+    <Content Include="css\magnific-popup.css" />
+    <Content Include="css\nice-select.css" />
+    <Content Include="css\owl.carousel.min.css" />
+    <Content Include="css\slick.css" />
+    <Content Include="css\style.css" />
+    <Content Include="css\swiper.min.css" />
+    <Content Include="css\themify-icons.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\themify.svg" />
+    <Content Include="Home.aspx" />
+    <Content Include="img\about.png" />
+    <Content Include="img\about_overlay.png" />
+    <Content Include="img\animate_icon\icon_1.png" />
+    <Content Include="img\animate_icon\icon_2.png" />
+    <Content Include="img\animate_icon\icon_3.png" />
+    <Content Include="img\animate_icon\icon_4.png" />
+    <Content Include="img\animate_icon\icon_5.png" />
+    <Content Include="img\animate_icon\icon_7.png" />
+    <Content Include="img\animate_icon\icon_8.png" />
+    <Content Include="img\animate_icon\icon_9.png" />
+    <Content Include="img\banner_bg.png" />
+    <Content Include="img\banner_overlay.png" />
+    <Content Include="img\blog\author.png" />
+    <Content Include="img\blog\blog_1.png" />
+    <Content Include="img\blog\blog_2.png" />
+    <Content Include="img\blog\blog_3.png" />
+    <Content Include="img\blog\blog_4.png" />
+    <Content Include="img\blog\learn_about_bg.png" />
+    <Content Include="img\blog\single_blog_1.png" />
+    <Content Include="img\blog\single_blog_2.png" />
+    <Content Include="img\blog\single_blog_3.png" />
+    <Content Include="img\blog\single_blog_4.png" />
+    <Content Include="img\blog\single_blog_5.png" />
+    <Content Include="img\blog\slide_thumb_1.png" />
+    <Content Include="img\booking_tabel_bg.png" />
+    <Content Include="img\breadcrumb.png" />
+    <Content Include="img\client\client_1.png" />
+    <Content Include="img\comment\comment_1.png" />
+    <Content Include="img\comment\comment_2.png" />
+    <Content Include="img\comment\comment_3.png" />
+    <Content Include="img\elements\a.jpg" />
+    <Content Include="img\elements\a2.jpg" />
+    <Content Include="img\elements\d.jpg" />
+    <Content Include="img\elements\disabled-check.png" />
+    <Content Include="img\elements\disabled-radio.png" />
+    <Content Include="img\elements\f1.jpg" />
+    <Content Include="img\elements\f2.jpg" />
+    <Content Include="img\elements\f3.jpg" />
+    <Content Include="img\elements\f4.jpg" />
+    <Content Include="img\elements\f5.jpg" />
+    <Content Include="img\elements\f6.jpg" />
+    <Content Include="img\elements\f7.jpg" />
+    <Content Include="img\elements\f8.jpg" />
+    <Content Include="img\elements\g1.jpg" />
+    <Content Include="img\elements\g2.jpg" />
+    <Content Include="img\elements\g3.jpg" />
+    <Content Include="img\elements\g4.jpg" />
+    <Content Include="img\elements\g5.jpg" />
+    <Content Include="img\elements\g6.jpg" />
+    <Content Include="img\elements\g7.jpg" />
+    <Content Include="img\elements\g8.jpg" />
+    <Content Include="img\elements\primary-check.png" />
+    <Content Include="img\elements\primary-radio.png" />
+    <Content Include="img\elements\success-check.png" />
+    <Content Include="img\elements\success-radio.png" />
+    <Content Include="img\favicon.png" />
+    <Content Include="img\food_item\food_item_1.png" />
+    <Content Include="img\food_item\food_item_2.png" />
+    <Content Include="img\food_item\food_item_3.png" />
+    <Content Include="img\food_menu\single_food_1.png" />
+    <Content Include="img\food_menu\single_food_2.png" />
+    <Content Include="img\food_menu\single_food_3.png" />
+    <Content Include="img\food_menu\single_food_4.png" />
+    <Content Include="img\food_menu\single_food_5.png" />
+    <Content Include="img\food_menu\single_food_6.png" />
+    <Content Include="img\icon\left_1.svg" />
+    <Content Include="img\icon\left_2.svg" />
+    <Content Include="img\icon\left_3.svg" />
+    <Content Include="img\icon\play.svg" />
+    <Content Include="img\icon\quate.svg" />
+    <Content Include="img\intro_video_bg.png" />
+    <Content Include="img\logo.png" />
+    <Content Include="img\post\next.png" />
+    <Content Include="img\post\post_1.png" />
+    <Content Include="img\post\post_10.png" />
+    <Content Include="img\post\post_2.png" />
+    <Content Include="img\post\post_3.png" />
+    <Content Include="img\post\post_4.png" />
+    <Content Include="img\post\post_5.png" />
+    <Content Include="img\post\post_6.png" />
+    <Content Include="img\post\post_7.png" />
+    <Content Include="img\post\post_8.png" />
+    <Content Include="img\post\post_9.png" />
+    <Content Include="img\post\preview.png" />
+    <Content Include="img\Quote.png" />
+    <Content Include="img\team\chefs_1.png" />
+    <Content Include="img\team\chefs_2.png" />
+    <Content Include="img\team\chefs_3.png" />
+    <Content Include="js\aos.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\contact.js" />
+    <Content Include="js\custom.js" />
+    <Content Include="js\gijgo.min.js" />
+    <Content Include="js\gmaps.min.js" />
+    <Content Include="js\jquery-1.12.1.min.js" />
+    <Content Include="js\jquery-3.3.1.slim.min.js" />
+    <Content Include="js\jquery.ajaxchimp.min.js" />
+    <Content Include="js\jquery.easing.min.js" />
+    <Content Include="js\jquery.form.js" />
+    <Content Include="js\jquery.magnific-popup.js" />
+    <Content Include="js\jquery.nice-select.min.js" />
+    <Content Include="js\jquery.validate.min.js" />
+    <Content Include="js\mail-script.js" />
+    <Content Include="js\masonry.pkgd.js" />
+    <Content Include="js\masonry.pkgd.min.js" />
+    <Content Include="js\owl.carousel.min.js" />
+    <Content Include="js\particles.min.js" />
+    <Content Include="js\popper.min.js" />
+    <Content Include="js\slick.min.js" />
+    <Content Include="js\swiper.min.js" />
+    <Content Include="js\swiper_custom.js" />
+    <Content Include="Menu.aspx" />
+    <Content Include="Reservation.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="webfonts\fa-brands-400.svg" />
+    <Content Include="webfonts\fa-regular-400.svg" />
+    <Content Include="webfonts\fa-solid-900.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AboutMeal.aspx.cs">
+      <DependentUpon>AboutMeal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AboutMeal.aspx.designer.cs">
+      <DependentUpon>AboutMeal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Chefs.aspx.cs">
+      <DependentUpon>Chefs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Chefs.aspx.designer.cs">
+      <DependentUpon>Chefs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\ServiceReference1\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.aspx.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Menu.aspx.designer.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaperA.Master.cs">
+      <DependentUpon>PaperA.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaperA.Master.designer.cs">
+      <DependentUpon>PaperA.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reservation.aspx.cs">
+      <DependentUpon>Reservation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reservation.aspx.designer.cs">
+      <DependentUpon>Reservation.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\style.map" />
+    <Content Include="fonts\Flaticon.eot" />
+    <Content Include="fonts\Flaticon.ttf" />
+    <Content Include="fonts\Flaticon.woff" />
+    <Content Include="fonts\Flaticon.woff2" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\gijgo-material.ttf" />
+    <Content Include="fonts\gijgo-material.woff" />
+    <Content Include="fonts\themify.eot" />
+    <Content Include="fonts\themify.ttf" />
+    <Content Include="fonts\themify.woff" />
+    <None Include="Connected Services\ServiceReference1\PaperAService.wsdl" />
+    <None Include="Connected Services\ServiceReference1\PaperAService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiceReference1\PaperAService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiceReference1\PaperAService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <Content Include="PaperA.Master" />
+    <Content Include="sass\style.scss" />
+    <Content Include="sass\_about.scss" />
+    <Content Include="sass\_banner.scss" />
+    <Content Include="sass\_blog.scss" />
+    <Content Include="sass\_blog_part.scss" />
+    <Content Include="sass\_breadcrumb.scss" />
+    <Content Include="sass\_button.scss" />
+    <Content Include="sass\_chefs_part.scss" />
+    <Content Include="sass\_common.scss" />
+    <Content Include="sass\_contact.scss" />
+    <Content Include="sass\_copyright_part.scss" />
+    <Content Include="sass\_elements.scss" />
+    <Content Include="sass\_exclusive_item_part.scss" />
+    <Content Include="sass\_extends.scss" />
+    <Content Include="sass\_food_menu.scss" />
+    <Content Include="sass\_footer.scss" />
+    <Content Include="sass\_gallery_part.scss" />
+    <Content Include="sass\_intro_video_bg.scss" />
+    <Content Include="sass\_menu.scss" />
+    <Content Include="sass\_mixins.scss" />
+    <Content Include="sass\_portfolio.scss" />
+    <Content Include="sass\_project_details.scss" />
+    <Content Include="sass\_regervation_part.scss" />
+    <Content Include="sass\_review.scss" />
+    <Content Include="sass\_service.scss" />
+    <Content Include="sass\_single_blog.scss" />
+    <Content Include="sass\_social_connect_part.scss" />
+    <Content Include="sass\_team.scss" />
+    <Content Include="sass\_variables.scss" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="webfonts\fa-brands-400.eot" />
+    <Content Include="webfonts\fa-brands-400.ttf" />
+    <Content Include="webfonts\fa-brands-400.woff" />
+    <Content Include="webfonts\fa-brands-400.woff2" />
+    <Content Include="webfonts\fa-regular-400.eot" />
+    <Content Include="webfonts\fa-regular-400.ttf" />
+    <Content Include="webfonts\fa-regular-400.woff" />
+    <Content Include="webfonts\fa-regular-400.woff2" />
+    <Content Include="webfonts\fa-solid-900.eot" />
+    <Content Include="webfonts\fa-solid-900.ttf" />
+    <Content Include="webfonts\fa-solid-900.woff" />
+    <Content Include="webfonts\fa-solid-900.woff2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="img\chefs\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\ServiceReference1\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>60145</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:60145/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

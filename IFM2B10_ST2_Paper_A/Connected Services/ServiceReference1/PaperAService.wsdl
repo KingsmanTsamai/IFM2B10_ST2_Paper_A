@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" name="PaperAService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:51079/PaperAService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:51079/PaperAService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:51079/PaperAService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/IFM2B10_ST2_Paper_A_Service" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IPaperAService_getOEI_InputMessage">
+    <wsdl:part name="parameters" element="tns:getOEI" />
+  </wsdl:message>
+  <wsdl:message name="IPaperAService_getOEI_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getOEIResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPaperAService_getmealType_InputMessage">
+    <wsdl:part name="parameters" element="tns:getmealType" />
+  </wsdl:message>
+  <wsdl:message name="IPaperAService_getmealType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getmealTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPaperAService_getSingleProduct_InputMessage">
+    <wsdl:part name="parameters" element="tns:getSingleProduct" />
+  </wsdl:message>
+  <wsdl:message name="IPaperAService_getSingleProduct_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getSingleProductResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPaperAService_addBooking_InputMessage">
+    <wsdl:part name="parameters" element="tns:addBooking" />
+  </wsdl:message>
+  <wsdl:message name="IPaperAService_addBooking_OutputMessage">
+    <wsdl:part name="parameters" element="tns:addBookingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPaperAService_checkIfExist_InputMessage">
+    <wsdl:part name="parameters" element="tns:checkIfExist" />
+  </wsdl:message>
+  <wsdl:message name="IPaperAService_checkIfExist_OutputMessage">
+    <wsdl:part name="parameters" element="tns:checkIfExistResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPaperAService_getEmail_InputMessage">
+    <wsdl:part name="parameters" element="tns:getEmail" />
+  </wsdl:message>
+  <wsdl:message name="IPaperAService_getEmail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getEmailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPaperAService_editReservation_InputMessage">
+    <wsdl:part name="parameters" element="tns:editReservation" />
+  </wsdl:message>
+  <wsdl:message name="IPaperAService_editReservation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:editReservationResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IPaperAService">
+    <wsdl:operation name="getOEI">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPaperAService/getOEI" message="tns:IPaperAService_getOEI_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPaperAService/getOEIResponse" message="tns:IPaperAService_getOEI_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getmealType">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPaperAService/getmealType" message="tns:IPaperAService_getmealType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPaperAService/getmealTypeResponse" message="tns:IPaperAService_getmealType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getSingleProduct">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPaperAService/getSingleProduct" message="tns:IPaperAService_getSingleProduct_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPaperAService/getSingleProductResponse" message="tns:IPaperAService_getSingleProduct_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="addBooking">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPaperAService/addBooking" message="tns:IPaperAService_addBooking_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPaperAService/addBookingResponse" message="tns:IPaperAService_addBooking_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="checkIfExist">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPaperAService/checkIfExist" message="tns:IPaperAService_checkIfExist_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPaperAService/checkIfExistResponse" message="tns:IPaperAService_checkIfExist_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getEmail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPaperAService/getEmail" message="tns:IPaperAService_getEmail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPaperAService/getEmailResponse" message="tns:IPaperAService_getEmail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="editReservation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPaperAService/editReservation" message="tns:IPaperAService_editReservation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPaperAService/editReservationResponse" message="tns:IPaperAService_editReservation_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IPaperAService" type="tns:IPaperAService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getOEI">
+      <soap:operation soapAction="http://tempuri.org/IPaperAService/getOEI" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getmealType">
+      <soap:operation soapAction="http://tempuri.org/IPaperAService/getmealType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSingleProduct">
+      <soap:operation soapAction="http://tempuri.org/IPaperAService/getSingleProduct" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addBooking">
+      <soap:operation soapAction="http://tempuri.org/IPaperAService/addBooking" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkIfExist">
+      <soap:operation soapAction="http://tempuri.org/IPaperAService/checkIfExist" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getEmail">
+      <soap:operation soapAction="http://tempuri.org/IPaperAService/getEmail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="editReservation">
+      <soap:operation soapAction="http://tempuri.org/IPaperAService/editReservation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PaperAService">
+    <wsdl:port name="BasicHttpBinding_IPaperAService" binding="tns:BasicHttpBinding_IPaperAService">
+      <soap:address location="http://localhost:51079/PaperAService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
